@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Seed {
     private static final int NUM_THREADS = 4; // Number of threads
     static final int BATCH_SIZE = 1; // Batch size
-    static final long TARGET_RECORDS = 1000; // Target number of records
+    static final long TARGET_RECORDS = 1_000_000; // Target number of records
     static final AtomicLong records = new AtomicLong(); // Total records counter
     static final AtomicLong populatedRecords = new AtomicLong(); // Populated records counter
     static final AtomicLong activeThreads = new AtomicLong(); // Active threads counter
